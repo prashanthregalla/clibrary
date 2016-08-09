@@ -1,0 +1,416 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ALL	tree_pr.h	/^    ALL = 0,$/;"	e	enum:TRAVERSAL
+ALPHABET_SIZE	global_vars_pr.h	21;"	d
+ARRAY_SIZE	global_vars_pr.h	18;"	d
+BST_NODE	avl_tree.c	/^struct BST_NODE$/;"	s	file:
+BST_NODE	bst.c	/^struct BST_NODE$/;"	s	file:
+CALLOC	global_vars_pr.h	51;"	d
+CC	makefile	/^CC=gcc $/;"	m
+CFLAGS	makefile	/^CFLAGS=-g -fPIC -Wall -I$(IDIR)$/;"	m
+CHARS	global_vars_pr.h	/^    CHARS, $/;"	e	enum:my_var_type_enum
+CHAR_TO_INDEX_LOWER	global_vars_pr.h	27;"	d
+CHAR_TO_INDEX_UPPER	global_vars_pr.h	30;"	d
+FALSE	global_vars_pr.h	16;"	d
+FLOATS	global_vars_pr.h	/^    FLOATS, $/;"	e	enum:my_var_type_enum
+FREE	global_vars_pr.h	66;"	d
+IDIR	makefile	/^IDIR =.$/;"	m
+INDEX_CHAR_LOWER	global_vars_pr.h	28;"	d
+INDEX_CHAR_UPPER	global_vars_pr.h	31;"	d
+INORDER	tree_pr.h	/^    INORDER,$/;"	e	enum:TRAVERSAL
+INTS	global_vars_pr.h	/^    INTS=0, $/;"	e	enum:my_var_type_enum
+LDFLAGS	makefile	/^LDFLAGS = -lGL -lglut -lpng -lz -lm$/;"	m
+LDIR	makefile	/^LDIR =.\/lib$/;"	m
+LDIR2	makefile	/^LDIR2 = \/lib64$/;"	m
+LEFT	segment_tree.c	9;"	d	file:
+LEVELORDER	tree_pr.h	/^    LEVELORDER$/;"	e	enum:TRAVERSAL
+LIBS	makefile	/^LIBS=-lm$/;"	m
+LIBSONAME	makefile	/^LIBSONAME=libpregalla.so$/;"	m
+MALLOC	global_vars_pr.h	36;"	d
+MALLOC_ARRAY	global_vars_pr.h	39;"	d
+MALLOC_FLEX	global_vars_pr.h	46;"	d
+MAX_PRI_Q	queue_pr.h	/^    MAX_PRI_Q, $/;"	e	enum:PRQ_TYPE
+MIN_PRI_Q	queue_pr.h	/^    MIN_PRI_Q, $/;"	e	enum:PRQ_TYPE
+ODIR	makefile	/^ODIR=.$/;"	m
+POSTORDER	tree_pr.h	/^    POSTORDER,$/;"	e	enum:TRAVERSAL
+PREFIX	makefile	/^PREFIX =.$/;"	m
+PREORDER	tree_pr.h	/^    PREORDER=1,$/;"	e	enum:TRAVERSAL
+PRQ_DESTROYED	queue_pr.h	/^    PRQ_DESTROYED$/;"	e	enum:PRQ_TYPE
+PRQ_TYPE	queue_pr.h	/^typedef enum PRQ_TYPE$/;"	g
+PR_DISJOINT_SET_H	disjoint_set_pr.h	2;"	d
+PR_GLOBAL_VARS_H	global_vars_pr.h	2;"	d
+PR_HEAP_H	heap_pr.h	2;"	d
+PR_HELPER_FNS_H	helper_fns_pr.h	2;"	d
+PR_LINKED_LIST_H	linked_list_pr.h	2;"	d
+PR_QUEUE_DST_H	queue_pr.h	4;"	d
+PR_SEARCHING_H	searching_pr.h	2;"	d
+PR_SORTING_H	sorting_pr.h	2;"	d
+PR_STACK_DST_H	stack_pr.h	2;"	d
+PR_TREE_H	tree_pr.h	2;"	d
+PR_TRIE_H	trie_pr.h	2;"	d
+REALLOC_ARRAY	global_vars_pr.h	55;"	d
+REALLOC_FLEX	global_vars_pr.h	62;"	d
+RIGHT	segment_tree.c	10;"	d	file:
+STRINGS	global_vars_pr.h	/^    STRINGS $/;"	e	enum:my_var_type_enum
+TRAVERSAL	tree_pr.h	/^typedef enum TRAVERSAL$/;"	g
+TREE_TRAV	tree_pr.h	/^}TREE_TRAV;$/;"	t	typeref:enum:TRAVERSAL
+TRUE	global_vars_pr.h	15;"	d
+alphabet	trie.c	/^    struct trie_node *alphabet[ALPHABET_SIZE];        $/;"	m	struct:trie_node	typeref:struct:trie_node::trie_node	file:
+avltree	avl_tree.c	/^typedef struct BST_NODE avltree;$/;"	t	typeref:struct:BST_NODE	file:
+avltree	tree_pr.h	/^typedef struct BST_NODE avltree; \/\/same as BST ADT, this is what we return(a pointer to it ofcourse)$/;"	t	typeref:struct:BST_NODE
+avltree_construct	avl_tree.c	/^avltree_construct(int *array, int size) \/\/construct AVL_TREE from a array, keep on inserting until the end of array$/;"	f
+avltree_count_key	avl_tree.c	/^avltree_count_key(avltree *AVLT, int key)$/;"	f
+avltree_create	avl_tree.c	/^avltree_create()$/;"	f
+avltree_delete	avl_tree.c	/^avltree_delete(avltree *AVLT, int data)$/;"	f
+avltree_destroy	avl_tree.c	/^avltree_destroy(avltree *AVLT)$/;"	f
+avltree_find	avl_tree.c	/^avltree_find(avltree *AVLT, int data)$/;"	f
+avltree_get_balance	avl_tree.c	/^avltree_get_balance(tree_node* node)    \/\/returns the diff between left and right height$/;"	f	file:
+avltree_height	avl_tree.c	/^avltree_height(avltree *AVLT)$/;"	f
+avltree_inorder_predecessor	avl_tree.c	/^avltree_inorder_predecessor(avltree *AVLT, int data)$/;"	f
+avltree_inorder_successor	avl_tree.c	/^avltree_inorder_successor(avltree *AVLT, int data)$/;"	f
+avltree_insert	avl_tree.c	/^avltree_insert(avltree *AVLT, int data)$/;"	f
+avltree_is_empty	avl_tree.c	/^avltree_is_empty(avltree *AVLT)$/;"	f
+avltree_is_height_balanced	avl_tree.c	/^avltree_is_height_balanced(avltree *AVLT)$/;"	f
+avltree_is_mirror	avl_tree.c	/^int avltree_is_mirror(avltree *AVLT)$/;"	f
+avltree_lca	avl_tree.c	/^avltree_lca(avltree *AVLT, int n1, int n2)$/;"	f
+avltree_left_rotate	avl_tree.c	/^avltree_left_rotate(tree_node *x)$/;"	f	file:
+avltree_max	avl_tree.c	/^avltree_max(avltree *AVLT)$/;"	f
+avltree_median	avl_tree.c	/^avltree_median(avltree *AVLT)$/;"	f
+avltree_min	avl_tree.c	/^avltree_min(avltree *AVLT)$/;"	f
+avltree_print	avl_tree.c	/^avltree_print(avltree *AVLT, TREE_TRAV type)$/;"	f
+avltree_print_count_key	avl_tree.c	/^avltree_print_count_key(avltree *AVLT, int key)$/;"	f
+avltree_print_height	avl_tree.c	/^avltree_print_height(avltree *AVLT)$/;"	f
+avltree_print_inorder_predecessor	avl_tree.c	/^avltree_print_inorder_predecessor(avltree *AVLT, int data)$/;"	f
+avltree_print_inorder_successor	avl_tree.c	/^avltree_print_inorder_successor(avltree *AVLT, int data)$/;"	f
+avltree_print_max	avl_tree.c	/^avltree_print_max(avltree *AVLT)$/;"	f
+avltree_print_median	avl_tree.c	/^avltree_print_median(avltree *AVLT)$/;"	f
+avltree_print_min	avl_tree.c	/^avltree_print_min(avltree *AVLT)$/;"	f
+avltree_print_size	avl_tree.c	/^avltree_print_size(avltree *AVLT)$/;"	f
+avltree_right_rotate	avl_tree.c	/^avltree_right_rotate(tree_node *y)$/;"	f	file:
+avltree_size	avl_tree.c	/^avltree_size(avltree *AVLT)$/;"	f
+avltree_update_height	avl_tree.c	/^avltree_update_height(tree_node* node)$/;"	f	file:
+bigger	helper_fns.c	/^bigger(int a, int b)$/;"	f
+binary_search	searching.c	/^int binary_search(int *array, int begin, int end, int key)$/;"	f
+bst	bst.c	/^typedef struct BST_NODE bst; \/\/BST ADT, this is what we return(a pointer to it ofcourse$/;"	t	typeref:struct:BST_NODE	file:
+bst	bst.c	/^typedef struct BST_NODE bst;$/;"	t	typeref:struct:BST_NODE	file:
+bst	tree_pr.h	/^typedef struct BST_NODE bst; \/\/BST ADT, this is what we return(a pointer to it ofcourse$/;"	t	typeref:struct:BST_NODE
+bst_construct	bst.c	/^bst_construct(int *array, int size) \/\/construct BST from a array, keep on inserting until the end of array$/;"	f
+bst_construct_optimal	bst.c	/^bst_construct_optimal(int *array, int size) \/\/construct BST with optimal height, sort the array and then construct$/;"	f
+bst_construct_optimal_utility	bst.c	/^bst_construct_optimal_utility(int *array, int begin, int end)$/;"	f	file:
+bst_count_key	bst.c	/^bst_count_key(bst *BST, int key)$/;"	f
+bst_create	bst.c	/^bst_create()$/;"	f
+bst_delete	bst.c	/^bst_delete(bst *BST, int data)$/;"	f
+bst_destroy	bst.c	/^bst_destroy(bst *BST)$/;"	f
+bst_find	bst.c	/^bst_find(bst *BST, int data)$/;"	f
+bst_height	bst.c	/^bst_height(bst *BST)$/;"	f
+bst_inorder_predecessor	bst.c	/^bst_inorder_predecessor(bst *BST, int data)$/;"	f
+bst_inorder_successor	bst.c	/^bst_inorder_successor(bst *BST, int data)$/;"	f
+bst_insert	bst.c	/^bst_insert(bst *BST, int data)$/;"	f
+bst_is_empty	bst.c	/^bst_is_empty(bst *BST)$/;"	f
+bst_is_height_balanced	bst.c	/^bst_is_height_balanced(bst *BST)$/;"	f
+bst_is_mirror	bst.c	/^int bst_is_mirror(bst *BST)$/;"	f
+bst_lca	bst.c	/^bst_lca(bst *BST, int n1, int n2)$/;"	f
+bst_max	bst.c	/^bst_max(bst *BST)$/;"	f
+bst_median	bst.c	/^bst_median(bst *BST)$/;"	f
+bst_min	bst.c	/^bst_min(bst *BST)$/;"	f
+bst_print	bst.c	/^bst_print(bst *BST, TREE_TRAV type)$/;"	f
+bst_print_count_key	bst.c	/^bst_print_count_key(bst *BST, int key)$/;"	f
+bst_print_height	bst.c	/^bst_print_height(bst *BST)$/;"	f
+bst_print_inorder_predecessor	bst.c	/^bst_print_inorder_predecessor(bst *BST, int data)$/;"	f
+bst_print_inorder_successor	bst.c	/^bst_print_inorder_successor(bst *BST, int data)$/;"	f
+bst_print_max	bst.c	/^bst_print_max(bst *BST)$/;"	f
+bst_print_median	bst.c	/^bst_print_median(bst *BST)$/;"	f
+bst_print_min	bst.c	/^bst_print_min(bst *BST)$/;"	f
+bst_print_size	bst.c	/^bst_print_size(bst *BST)$/;"	f
+bst_size	bst.c	/^bst_size(bst *BST)$/;"	f
+bubble_sort	sorting.c	/^bubble_sort(int *array, int size)$/;"	f
+bucket_sort	sorting.c	/^bucket_sort(int *array, int size)$/;"	f
+build_max_heap	heap.c	/^build_max_heap(void *array, int size, int no_elem, compare_pr mycompare)$/;"	f
+build_min_heap	heap.c	/^build_min_heap(void* array, int size, int no_elem, compare_pr mycompare)$/;"	f
+capacity	pri_queue.c	/^    int capacity;$/;"	m	struct:pri_queue_	file:
+capacity	queue.c	/^    int capacity;$/;"	m	struct:queue_a	file:
+capacity	stack.c	/^    int capacity;$/;"	m	struct:stack_a	file:
+comb_sort	sorting.c	/^comb_sort(int *array, int size)$/;"	f
+compare	linked_list_pr.h	/^    int (*compare)(void*, void*);   \/\/this is used for finding whether the element matches or not$/;"	m	struct:slist_
+compare	pri_queue.c	/^    compare_pr compare;$/;"	m	struct:pri_queue_	file:
+compare_pr	global_vars_pr.h	/^typedef int (*compare_pr)(void*, void*);$/;"	t
+compare_pr	heap.c	/^typedef int (*compare_pr)(void*, void*);$/;"	t	file:
+compare_pr	heap_pr.h	/^typedef int (*compare_pr)(void*, void*);$/;"	t
+compare_pr	queue_pr.h	/^typedef int (*compare_pr)(void*, void*);$/;"	t
+compare_t	linked_list.c	/^typedef int (*compare_t)(void*, void*);$/;"	t	file:
+copy_array	helper_fns.c	/^copy_array(int *source, int *dest, int size)$/;"	f
+copy_range_array	helper_fns.c	/^copy_range_array(int *src, int src_begin, int src_end, int *dst, int dst_begin, int dst_end)$/;"	f
+count	tree_pr.h	/^    int count;$/;"	m	struct:tree_node_t
+count	trie.c	/^    int count;                                        \/\/count is FREQUENCY of a word$/;"	m	struct:trie_node	file:
+count_key	searching.c	/^int count_key(int *array, int begin, int end, int key)$/;"	f
+counting_sort	sorting.c	/^counting_sort(int *array, int size, int max_no)$/;"	f
+create_new_sll_node	linked_list.c	/^create_new_sll_node(void* data)$/;"	f	file:
+create_new_trie_node	trie.c	/^create_new_trie_node()$/;"	f	file:
+data	linked_list_pr.h	/^    void* data;$/;"	m	struct:node_sll_
+data	queue.c	/^    void* data;$/;"	m	struct:queue_node_	file:
+data	stack.c	/^    void* data;$/;"	m	struct:stack_node_	file:
+data	tree_pr.h	/^    int data;$/;"	m	struct:tree_node_t
+deleted_word_frequency	trie.c	/^static int deleted_word_frequency = 0; $/;"	v	file:
+dep	makefile	/^dep = $(obj:.o=.d)  # one dependency file for each source$/;"	m
+djset_are_connected	disjoint_set.c	/^djset_are_connected(int *parent, int A, int B) \/\/ a different name for in_same_set$/;"	f
+djset_in_same	disjoint_set.c	/^djset_in_same(int *parent, int A, int B)$/;"	f
+djset_root	disjoint_set.c	/^djset_root(int *parent, int i)$/;"	f
+djset_union	disjoint_set.c	/^djset_union(int *parent, int A, int B, int with_rank, int rank_update, int *rank)$/;"	f
+elements	pri_queue.c	/^    pri_queue_data *elements;$/;"	m	struct:pri_queue_	file:
+elements	queue.c	/^    int *elements;$/;"	m	struct:queue_a	file:
+elements	stack.c	/^    int *elements;$/;"	m	struct:stack_a	file:
+fill_array	helper_fns.c	/^fill_array(int *array, int size, int val)$/;"	f
+fill_range_array	helper_fns.c	/^fill_range_array(int *array, int begin, int end, int val)$/;"	f
+first_key	searching.c	/^int first_key(int *array, int begin, int end, int key)$/;"	f
+front	queue.c	/^    int front;$/;"	m	struct:queue_a	file:
+front	queue.c	/^    queue_node *front, *rear;$/;"	m	struct:queue_	file:
+head	linked_list_pr.h	/^    node_sll *head;$/;"	m	struct:slist_
+heap_compare	sorting.c	/^static int heap_compare(void* s1, void* s2)$/;"	f	file:
+heap_sort	sorting.c	/^heap_sort(int *array, int size)$/;"	f
+height	avl_tree.c	/^    int height;$/;"	m	struct:BST_NODE	file:
+height	bst.c	/^    int height;$/;"	m	struct:BST_NODE	file:
+height	tree_pr.h	/^    int height; \/\/for AVLTREE so that all avltree functions' writing gets simpler. though its a waste of space for each node$/;"	m	struct:tree_node_t
+insertion_sort	sorting.c	/^insertion_sort(int *array, int size)$/;"	f
+is_leaf	trie.c	/^    int is_leaf;$/;"	m	struct:trie_node	file:
+last_key	searching.c	/^int last_key(int *array, int begin, int end, int key)$/;"	f
+last_key_utility	searching.c	/^static int last_key_utility(int *array, int begin, int end, int key, int array_size)$/;"	f	file:
+left	tree_pr.h	/^    struct tree_node_t *left;$/;"	m	struct:tree_node_t	typeref:struct:tree_node_t::tree_node_t
+left_heap	heap.c	/^left_heap(int i)$/;"	f	file:
+linear_search	searching.c	/^int linear_search(int *array, int begin, int end, int key)$/;"	f
+linear_search_reverse	searching.c	/^int linear_search_reverse(int *array, int begin, int end, int key)$/;"	f
+lower_bound	searching.c	/^lower_bound(int *array, int begin, int end, int key)$/;"	f
+lower_bound_utility	searching.c	/^lower_bound_utility(int *array, int begin, int end, int key, int size) \/\/index to the key thats less than the key$/;"	f	file:
+main	graphs/graph1.cpp	/^int main()$/;"	f
+max	avl_tree.c	/^    int max;$/;"	m	struct:BST_NODE	file:
+max	bst.c	/^    int max;$/;"	m	struct:BST_NODE	file:
+max_heapify	heap.c	/^max_heapify(void *array, int size, int i, int no_elem, compare_pr compare)$/;"	f
+median	avl_tree.c	/^    int median;$/;"	m	struct:BST_NODE	file:
+median	bst.c	/^    int median;$/;"	m	struct:BST_NODE	file:
+merge	helper_fns.c	/^merge(int *array1, int size_1, int *array2, int size_2, int *result) \/\/result array should be big enough$/;"	f
+merge_sort	sorting.c	/^merge_sort(int *array, int size)$/;"	f
+merge_sort_utility	sorting.c	/^merge_sort_utility(int *array, int begin, int end)$/;"	f	file:
+min	avl_tree.c	/^    int min;$/;"	m	struct:BST_NODE	file:
+min	bst.c	/^    int min;$/;"	m	struct:BST_NODE	file:
+min_heapify	heap.c	/^min_heapify(void* array, int size, int i, int no_elem, compare_pr compare)$/;"	f
+my_var_type	global_vars_pr.h	/^}my_var_type;$/;"	t	typeref:enum:my_var_type_enum
+my_var_type_enum	global_vars_pr.h	/^typedef enum my_var_type_enum$/;"	g
+next	linked_list_pr.h	/^    struct node_sll_ *next;$/;"	m	struct:node_sll_	typeref:struct:node_sll_::node_sll_
+next	queue.c	/^    struct queue_node_ *next;$/;"	m	struct:queue_node_	typeref:struct:queue_node_::queue_node_	file:
+next	stack.c	/^    struct stack_node_ *next;$/;"	m	struct:stack_node_	typeref:struct:stack_node_::stack_node_	file:
+no_copied_convert	tree_binary.c	/^static int no_copied_convert;$/;"	v	file:
+no_nodes_convert	tree_binary.c	/^static int no_nodes_convert; \/\/for storing number of nodes in tree while converting it to bst in tree_convert_to_bst()$/;"	v	file:
+no_words	trie.c	/^    int no_words;$/;"	m	struct:trie_t	file:
+node_sll	linked_list_pr.h	/^}node_sll;$/;"	t	typeref:struct:node_sll_
+node_sll_	linked_list_pr.h	/^typedef struct node_sll_$/;"	s
+normal_union	disjoint_set.c	/^normal_union(int *parent, int A ,int B)$/;"	f	file:
+obj	makefile	/^obj = $(src:.c=.o)$/;"	m
+orig_array	segment_tree.c	/^    int *orig_array;  \/\/this is the array provided to us initially, also modify this whenever there are updates$/;"	m	struct:segtree_node	file:
+parent_heap	heap.c	/^parent_heap(int i)$/;"	f	file:
+partition	helper_fns.c	/^partition(int *array, int begin, int end)$/;"	f
+partition_random	helper_fns.c	/^partition_random(int *array, int begin, int end) \/\/used by quick_sort$/;"	f
+pri_queue	pri_queue.c	/^typedef struct pri_queue_ pri_queue;$/;"	t	typeref:struct:pri_queue_	file:
+pri_queue	queue_pr.h	/^typedef struct pri_queue_ pri_queue;$/;"	t	typeref:struct:pri_queue_
+pri_queue_	pri_queue.c	/^struct pri_queue_$/;"	s	file:
+pri_queue_capacity	pri_queue.c	/^pri_queue_capacity(pri_queue *PRQ)$/;"	f
+pri_queue_compare	pri_queue.c	/^pri_queue_compare(void* p1, void* p2)$/;"	f
+pri_queue_content	queue_pr.h	/^        void* pri_queue_content;$/;"	m	struct:pri_queue_data_t
+pri_queue_create	pri_queue.c	/^pri_queue_create(int max_elem, prq_type type) $/;"	f
+pri_queue_data	queue_pr.h	/^typedef struct pri_queue_data_t pri_queue_data;$/;"	t	typeref:struct:pri_queue_data_t
+pri_queue_data_t	queue_pr.h	/^struct pri_queue_data_t$/;"	s
+pri_queue_decrease_key	pri_queue.c	/^pri_queue_decrease_key(pri_queue *PRQ, int index, int new_pri_val) \/\/will log error if its a max_pr_q$/;"	f
+pri_queue_dequeue	pri_queue.c	/^pri_queue_dequeue(pri_queue *PRQ)$/;"	f
+pri_queue_destroy	pri_queue.c	/^pri_queue_destroy(pri_queue *PRQ)$/;"	f
+pri_queue_enqueue	pri_queue.c	/^pri_queue_enqueue(pri_queue *PRQ, pri_queue_data elem, prq_type type)$/;"	f
+pri_queue_extract_max	pri_queue.c	/^pri_queue_extract_max(pri_queue *PRQ) \/\/will log error if its a max_pr_q$/;"	f
+pri_queue_extract_min	pri_queue.c	/^pri_queue_extract_min(pri_queue *PRQ) \/\/will do nothing if its a min_pr_q, logs to stderr ofcourse$/;"	f
+pri_queue_increase_key	pri_queue.c	/^pri_queue_increase_key(pri_queue *PRQ, int index, int new_pri_val) \/\/will do nothing if its a min_pr_q, logs ofcourse$/;"	f
+pri_queue_is_empty	pri_queue.c	/^pri_queue_is_empty(pri_queue *PRQ)$/;"	f
+pri_queue_is_full	pri_queue.c	/^pri_queue_is_full(pri_queue *PRQ)$/;"	f
+pri_queue_peek_max	pri_queue.c	/^pri_queue_peek_max(pri_queue *PRQ) \/\/will do nothing if its a min_pr_q, logs ofcourse$/;"	f
+pri_queue_peek_min	pri_queue.c	/^pri_queue_peek_min(pri_queue *PRQ) \/\/will log error if its a max_pr_q$/;"	f
+pri_queue_ptr	queue_pr.h	/^typedef struct pri_queue_* pri_queue_ptr;$/;"	t	typeref:struct:pri_queue_
+pri_queue_size	pri_queue.c	/^pri_queue_size(pri_queue *PRQ)$/;"	f
+pri_queue_swap	pri_queue.c	/^pri_queue_swap(pri_queue_data* elements, int i1, int i2)$/;"	f	file:
+pri_queue_type	pri_queue.c	/^pri_queue_type(pri_queue *PRQ) \/\/ 0: MIN_PRI_Q, 1: MAX_PRI_Q$/;"	f
+print_array	helper_fns.c	/^print_array(int *array, int size)$/;"	f
+print_range_array	helper_fns.c	/^print_range_array(int *array, int begin, int end) \/\/we can &\/ need to pass size as an argument too, for bounds checking$/;"	f
+priority	queue_pr.h	/^        int priority;$/;"	m	struct:pri_queue_data_t
+prq_type	queue_pr.h	/^} prq_type; $/;"	t	typeref:enum:PRQ_TYPE
+queue	queue_pr.h	/^typedef struct queue_ queue;$/;"	t	typeref:struct:queue_
+queue_	queue.c	/^struct queue_                \/\/for LL representation of queue, named, queue$/;"	s	file:
+queue_a	queue.c	/^struct queue_a  \/\/for array representaion of queue, named, queue_a$/;"	s	file:
+queue_a	queue_pr.h	/^typedef struct queue_a queue_a;$/;"	t	typeref:struct:queue_a
+queue_a_capacity	queue.c	/^queue_a_capacity(queue_a *Q) $/;"	f
+queue_a_create	queue.c	/^queue_a_create(int max_elem)$/;"	f
+queue_a_dequeue	queue.c	/^queue_a_dequeue(queue_a *Q)$/;"	f
+queue_a_destroy	queue.c	/^queue_a_destroy(queue_a *Q)$/;"	f
+queue_a_enqueue	queue.c	/^queue_a_enqueue(queue_a *Q, int elem)$/;"	f
+queue_a_front	queue.c	/^queue_a_front(queue_a *Q)$/;"	f
+queue_a_is_empty	queue.c	/^queue_a_is_empty(queue_a *Q)$/;"	f
+queue_a_is_full	queue.c	/^queue_a_is_full(queue_a *Q)$/;"	f
+queue_a_ptr	queue_pr.h	/^typedef struct queue_a* queue_a_ptr;$/;"	t	typeref:struct:queue_a
+queue_a_rear	queue.c	/^queue_a_rear(queue_a *Q)$/;"	f
+queue_a_size	queue.c	/^queue_a_size(queue_a *Q)$/;"	f
+queue_create	queue.c	/^queue_create() $/;"	f
+queue_dequeue	queue.c	/^queue_dequeue(queue *Q)$/;"	f
+queue_destroy	queue.c	/^queue_destroy(queue *Q)$/;"	f
+queue_enqueue	queue.c	/^queue_enqueue(queue *Q, void* data)$/;"	f
+queue_front	queue.c	/^queue_front(queue *Q)$/;"	f
+queue_is_empty	queue.c	/^queue_is_empty(queue *Q)$/;"	f
+queue_node	queue.c	/^}queue_node;$/;"	t	typeref:struct:queue_node_	file:
+queue_node_	queue.c	/^typedef struct queue_node_  \/\/for LL representation of queue, named, queue$/;"	s	file:
+queue_ptr	queue_pr.h	/^typedef struct queue_* queue_ptr;$/;"	t	typeref:struct:queue_
+queue_rear	queue.c	/^queue_rear(queue *Q)$/;"	f
+queue_size	queue.c	/^queue_size(queue *Q)$/;"	f
+quick_sort	sorting.c	/^quick_sort(int *array, int size)$/;"	f
+quick_sort_utility	sorting.c	/^static void quick_sort_utility(int *array, int begin, int end)$/;"	f	file:
+radix_sort	sorting.c	/^radix_sort(int *array, int size)$/;"	f
+rear	queue.c	/^    int rear;$/;"	m	struct:queue_a	file:
+rear	queue.c	/^    queue_node *front, *rear;$/;"	m	struct:queue_	file:
+right	tree_pr.h	/^    struct tree_node_t *right;$/;"	m	struct:tree_node_t	typeref:struct:tree_node_t::tree_node_t
+right_heap	heap.c	/^right_heap(int i)$/;"	f	file:
+root	avl_tree.c	/^    tree_node *root;$/;"	m	struct:BST_NODE	file:
+root	bst.c	/^    tree_node *root;$/;"	m	struct:BST_NODE	file:
+root	stack.c	/^    stack_node *root;    $/;"	m	struct:stack_	file:
+root	trie.c	/^    trie_node *root;$/;"	m	struct:trie_t	file:
+segtree	segment_tree.c	/^typedef struct segtree_node segtree;$/;"	t	typeref:struct:segtree_node	file:
+segtree	tree_pr.h	/^typedef struct segtree_node segtree;$/;"	t	typeref:struct:segtree_node
+segtree_array	segment_tree.c	/^    int *segtree_array;$/;"	m	struct:segtree_node	file:
+segtree_build_helper	segment_tree.c	/^segtree_build_helper(segtree *ST, int node, int begin, int end)$/;"	f	file:
+segtree_create	segment_tree.c	/^segtree_create(int *array, int size)$/;"	f
+segtree_destroy	segment_tree.c	/^segtree_destroy(segtree* ST)$/;"	f
+segtree_node	segment_tree.c	/^struct segtree_node$/;"	s	file:
+segtree_orig_array	segment_tree.c	/^segtree_orig_array(segtree *ST)   \/\/this will give the pointer to the array after all modifications, in case you need it$/;"	f
+segtree_query	segment_tree.c	/^segtree_query(segtree* ST, int l, int r)$/;"	f
+segtree_query_helper	segment_tree.c	/^segtree_query_helper(segtree* ST, int node, int begin, int end, int l, int r)$/;"	f	file:
+segtree_update_range	segment_tree.c	/^segtree_update_range(segtree* ST, int l, int r, int val)$/;"	f
+segtree_update_range_helper	segment_tree.c	/^segtree_update_range_helper(segtree* ST, int node, int begin, int end, int l, int r, int val)$/;"	f	file:
+selection_sort	sorting.c	/^selection_sort(int *array, int size)$/;"	f
+shell_sort	sorting.c	/^shell_sort(int *array, int size)$/;"	f
+size	avl_tree.c	/^    int size;$/;"	m	struct:BST_NODE	file:
+size	bst.c	/^    int size;$/;"	m	struct:BST_NODE	file:
+size	linked_list_pr.h	/^    int size;$/;"	m	struct:slist_
+size	pri_queue.c	/^    int size;$/;"	m	struct:pri_queue_	file:
+size	queue.c	/^    int size;$/;"	m	struct:queue_	file:
+size	queue.c	/^    int size;$/;"	m	struct:queue_a	file:
+size	segment_tree.c	/^    int size;$/;"	m	struct:segtree_node	file:
+size	stack.c	/^    int size;$/;"	m	struct:stack_	file:
+size	stack.c	/^    int size;$/;"	m	struct:stack_a	file:
+slist	linked_list_pr.h	/^}slist;$/;"	t	typeref:struct:slist_
+slist_	linked_list_pr.h	/^typedef struct slist_$/;"	s
+slist_change_compare	linked_list.c	/^slist_change_compare(slist *SLL, compare_pr new_compare)$/;"	f
+slist_compare	linked_list.c	/^slist_compare(slist *SLL)$/;"	f
+slist_create	linked_list.c	/^slist_create(compare_pr my_compare)$/;"	f
+slist_delete	linked_list.c	/^slist_delete(slist *SLL, void* elem)$/;"	f
+slist_destroy	linked_list.c	/^slist_destroy(slist *SLL)$/;"	f
+slist_find	linked_list.c	/^slist_find(slist *SLL, void* elem)$/;"	f
+slist_find_prev	linked_list.c	/^slist_find_prev(slist *SLL, void* elem)$/;"	f
+slist_insert_after	linked_list.c	/^slist_insert_after(slist *SLL, void* after_this, void* elem)$/;"	f
+slist_insert_before	linked_list.c	/^slist_insert_before(slist *SLL, void* before_this, void* elem)$/;"	f
+slist_insert_first	linked_list.c	/^slist_insert_first(slist *SLL, void* elem)  \/\/insert at the beginning$/;"	f
+slist_insert_last	linked_list.c	/^slist_insert_last(slist *SLL, void* elem) \/\/insert at the beginning$/;"	f
+slist_size	linked_list.c	/^slist_size(slist *SLL)$/;"	f
+smaller	helper_fns.c	/^smaller(int a, int b)$/;"	f
+src	makefile	/^src = $(wildcard *.c)$/;"	m
+stack	stack_pr.h	/^typedef struct stack_ stack;$/;"	t	typeref:struct:stack_
+stack_	stack.c	/^struct stack_            \/\/for LL representation$/;"	s	file:
+stack_a	stack.c	/^struct stack_a   \/\/stack_a : stack using array, will have one more stack(simply, stack) using linked list$/;"	s	file:
+stack_a	stack_pr.h	/^typedef struct stack_a stack_a;$/;"	t	typeref:struct:stack_a
+stack_a_capacity	stack.c	/^stack_a_capacity(stack_a *S)$/;"	f
+stack_a_create	stack.c	/^stack_a_create(int max_elem)$/;"	f
+stack_a_destroy	stack.c	/^stack_a_destroy(stack_a *S)$/;"	f
+stack_a_is_empty	stack.c	/^stack_a_is_empty(stack_a *S)$/;"	f
+stack_a_is_full	stack.c	/^stack_a_is_full(stack_a *S)$/;"	f
+stack_a_pop	stack.c	/^stack_a_pop(stack_a *S)$/;"	f
+stack_a_ptr	stack_pr.h	/^typedef struct stack_a* stack_a_ptr;$/;"	t	typeref:struct:stack_a
+stack_a_push	stack.c	/^stack_a_push(stack_a *S, int elem)$/;"	f
+stack_a_size	stack.c	/^stack_a_size(stack_a *S)$/;"	f
+stack_a_top	stack.c	/^stack_a_top(stack_a *S)$/;"	f
+stack_create	stack.c	/^stack_create()$/;"	f
+stack_destroy	stack.c	/^stack_destroy(stack *S)$/;"	f
+stack_is_empty	stack.c	/^stack_is_empty(stack *S)$/;"	f
+stack_node	stack.c	/^}stack_node;$/;"	t	typeref:struct:stack_node_	file:
+stack_node_	stack.c	/^typedef struct stack_node_ \/\/for LL representation$/;"	s	file:
+stack_pop	stack.c	/^stack_pop(stack *S)$/;"	f
+stack_ptr	stack_pr.h	/^typedef struct stack_* stack_ptr;$/;"	t	typeref:struct:stack_
+stack_push	stack.c	/^stack_push(stack *S, void* data)$/;"	f
+stack_size	stack.c	/^stack_size(stack *S)$/;"	f
+stack_top	stack.c	/^stack_top(stack *S)$/;"	f
+swap	helper_fns.c	/^swap(int *array, int pos1, int pos2)$/;"	f
+swap_void	helper_fns.c	/^swap_void(void *array1, int no1, int no2, int size)$/;"	f
+tail	linked_list_pr.h	/^    node_sll *tail;$/;"	m	struct:slist_
+tree_add_node	tree_binary.c	/^tree_add_node(int data)$/;"	f
+tree_are_mirrors	tree_binary.c	/^tree_are_mirrors(tree_node* root1, tree_node* root2)$/;"	f
+tree_check_if_bst	tree_binary.c	/^tree_check_if_bst(tree_node *root)$/;"	f
+tree_check_if_bst_utility	tree_binary.c	/^tree_check_if_bst_utility(tree_node* root, int min, int max)$/;"	f	file:
+tree_construct	tree_binary.c	/^tree_construct(int *array1, int *array2, TREE_TRAV type1, TREE_TRAV type2)$/;"	f
+tree_convert_to_bst	tree_binary.c	/^tree_convert_to_bst(tree_node *root)  \/\/convert a binary to a bst keeping the same structure$/;"	f
+tree_count_key_bst	bst.c	/^tree_count_key_bst(tree_node* root, int key)$/;"	f	file:
+tree_create_node	tree_binary.c	/^tree_create_node(int data)$/;"	f
+tree_delete_avltree	avl_tree.c	/^tree_delete_avltree(tree_node* root, int key)$/;"	f	file:
+tree_delete_bst	bst.c	/^tree_delete_bst(tree_node *root, int key)  \/\/will return the root of new tree(if the old one is deleted) or else original root$/;"	f	file:
+tree_destroy	tree_binary.c	/^tree_destroy(tree_node *root)$/;"	f
+tree_find_bst	bst.c	/^tree_find_bst(tree_node *root, int data)$/;"	f	file:
+tree_height	tree_binary.c	/^tree_height(tree_node *root)$/;"	f
+tree_inorder	tree_binary.c	/^tree_inorder(tree_node* root)$/;"	f
+tree_inorder_copy_array	tree_binary.c	/^tree_inorder_copy_array(tree_node *root, int *inorder_array)$/;"	f	file:
+tree_inorder_iterative	tree_binary.c	/^tree_inorder_iterative(tree_node* root)$/;"	f
+tree_inorder_paste_tree	tree_binary.c	/^tree_inorder_paste_tree(tree_node *root, int *inorder_array)$/;"	f	file:
+tree_inorder_predecessor_bst	bst.c	/^tree_inorder_predecessor_bst(tree_node* root, int key)$/;"	f	file:
+tree_inorder_successor_bst	bst.c	/^tree_inorder_successor_bst(tree_node *root, int key)$/;"	f	file:
+tree_insert	tree_binary.c	/^tree_node* tree_insert(int data)$/;"	f
+tree_insert_avltree	avl_tree.c	/^tree_insert_avltree(tree_node* root, int key)$/;"	f	file:
+tree_insert_bst	bst.c	/^tree_insert_bst(tree_node *root, int data)  \/\/always return the root$/;"	f	file:
+tree_is_height_balanced	tree_binary.c	/^tree_is_height_balanced(tree_node *root)   \/\/returns -1 in case not, else returns height of the tree(+ve value)$/;"	f
+tree_is_mirror	tree_binary.c	/^tree_is_mirror(tree_node *root)$/;"	f
+tree_lca_bst	bst.c	/^tree_lca_bst(tree_node* root, int n1, int n2)$/;"	f	file:
+tree_levelorder	tree_binary.c	/^void tree_levelorder(tree_node *root)$/;"	f
+tree_levelorder_iterative	tree_binary.c	/^tree_levelorder_iterative(tree_node* root)   \/\/Using Queue$/;"	f
+tree_levelorder_recursive	tree_binary.c	/^tree_levelorder_recursive(tree_node* root)  \/\/this is without using queue, recursive and O(n2) approach$/;"	f	file:
+tree_levelorder_utility	tree_binary.c	/^tree_levelorder_utility(tree_node *root, int level)$/;"	f	file:
+tree_max_avltree	avl_tree.c	/^tree_max_avltree(tree_node *root)$/;"	f	file:
+tree_max_bst	bst.c	/^tree_max_bst(tree_node *root)$/;"	f	file:
+tree_min_avltree	avl_tree.c	/^tree_min_avltree(tree_node *root)$/;"	f	file:
+tree_min_bst	bst.c	/^tree_min_bst(tree_node *root)$/;"	f	file:
+tree_node	tree_pr.h	/^}tree_node;$/;"	t	typeref:struct:tree_node_t
+tree_node_height	tree_binary.c	/^tree_node_height(tree_node* node)$/;"	f
+tree_node_t	tree_pr.h	/^typedef struct tree_node_t$/;"	s
+tree_postorder	tree_binary.c	/^tree_postorder(tree_node* root)$/;"	f
+tree_postorder_iterative	tree_binary.c	/^tree_postorder_iterative(tree_node* root)$/;"	f
+tree_preorder	tree_binary.c	/^tree_preorder(tree_node* root)$/;"	f
+tree_preorder_iterative	tree_binary.c	/^tree_preorder_iterative(tree_node* root)$/;"	f
+tree_print	tree_binary.c	/^tree_print(tree_node* root, TREE_TRAV type)$/;"	f
+tree_print_height	tree_binary.c	/^tree_print_height(tree_node* root)$/;"	f
+tree_print_size	tree_binary.c	/^tree_print_size(tree_node* root)$/;"	f
+tree_search_bst	bst.c	/^tree_search_bst(tree_node *root, int data)$/;"	f	file:
+tree_size	tree_binary.c	/^tree_size(tree_node *root)$/;"	f
+tree_update_height	tree_binary.c	/^tree_update_height(tree_node* node)$/;"	f
+trie	trie.c	/^typedef struct trie_t trie;$/;"	t	typeref:struct:trie_t	file:
+trie	trie_pr.h	/^typedef struct trie_t trie;$/;"	t	typeref:struct:trie_t
+trie__frequency	trie.c	/^trie__frequency(trie *Trie, const char *word)$/;"	f
+trie_create	trie.c	/^trie_create()$/;"	f
+trie_delete	trie.c	/^trie_delete(trie *Trie, const char *word)$/;"	f
+trie_delete_utility	trie.c	/^trie_delete_utility(trie_node *pfollow, const char *word, int level, int length) \/\/used by trie_delete function$/;"	f	file:
+trie_destroy	trie.c	/^trie_destroy(trie *Trie)$/;"	f
+trie_find	trie.c	/^trie_find(trie *Trie, const char *word)  \/\/search trie for word$/;"	f
+trie_insert	trie.c	/^trie_insert(trie *Trie, const char *word)  $/;"	f
+trie_is_empty	trie.c	/^trie_is_empty(trie *Trie)$/;"	f
+trie_is_free_node	trie.c	/^trie_is_free_node(trie_node *Trie_node)$/;"	f	file:
+trie_is_leaf_node	trie.c	/^trie_is_leaf_node(trie_node *Trie_node)$/;"	f	file:
+trie_node	trie.c	/^typedef struct trie_node$/;"	s	file:
+trie_node	trie.c	/^}trie_node;$/;"	t	typeref:struct:trie_node	file:
+trie_print	trie.c	/^trie_print(trie *Trie)$/;"	f
+trie_print_node	trie.c	/^trie_print_node(trie_node *root)   \/\/helper for printing all NON NULL chars in a trie_node...for debugging purpose$/;"	f	file:
+trie_print_utility	trie.c	/^trie_print_utility(trie_node *root)$/;"	f	file:
+trie_search	trie.c	/^trie_search(trie *Trie, const char *word)  \/\/search trie for word, another name for find$/;"	f
+trie_size	trie.c	/^trie_size(trie *Trie)$/;"	f
+trie_t	trie.c	/^struct trie_t$/;"	s	file:
+type	pri_queue.c	/^    prq_type type; \/\/type of priority queue 0: MIN_PRI_Q, 1: MAX_PRI_Q$/;"	m	struct:pri_queue_	file:
+update_rank	disjoint_set.c	/^update_rank(int *rank, int leader, int other, int rank_update)$/;"	f	file:
+upper_bound	searching.c	/^upper_bound(int *array, int begin, int end, int key)$/;"	f
+upper_bound_utility	searching.c	/^static upper_bound_utility(int *array, int begin, int end, int key, int size) \/\/index to the key thats greater than the key$/;"	f	file:
+weighted_union	disjoint_set.c	/^weighted_union(int *parent, int A,int B, int rank_update, int *rank)$/;"	f	file:

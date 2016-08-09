@@ -1,0 +1,7 @@
+
+
+#How to complile your programs with this library
+
+1. do a 'make install' this will install the library.so
+
+CC='gcc -Wall -g -lm -pedantic -Wextra -I(INCLUDE_DIR) -lpregalla'
